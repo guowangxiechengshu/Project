@@ -1,0 +1,247 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="author" content="admin" />
+    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_CSS_URL ?>reset.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_CSS_URL ?>style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_CSS_URL ?>product.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_CSS_URL ?>member.css"/>
+    <script type="text/javascript" src="<?php echo ADMIN_JS_URL ?>jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo ADMIN_JS_URL ?>carouFredSel-6.2.1-min.js"></script>
+    <script type="text/javascript" src="<?php echo ADMIN_JS_URL ?>carou.js"></script>
+    <script type="text/javascript" src="<?php echo ADMIN_JS_URL ?>scrolltopcontrol.js"></script>
+    <script type="text/javascript" src="<?php echo ADMIN_JS_URL ?>globle.js"></script>
+    <script type="text/javascript" src="<?php echo ADMIN_JS_URL ?>pub.js"></script>
+    <title></title>
+</head>
+<!--[if IE 6]>
+<script type="text/javascript" src="<?php echo ADMIN_JS_URL ?>DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        DD_belatedPNG.fix(".cart_btn a,.search_top,.hot_img,.cbl_ul li a,.cbl_ul li,b");
+    }
+</script>
+<![endif]-->
+<body>
+<div class="header">
+    <div class="sub_top clear">
+        <div class="wapper">
+            <div class="left sub_topLeft"><a href="">顺隆手机商城</a></div>
+            <div class="right sub_topRight">
+                您好，欢迎来到顺隆手机商城！
+                [<a href="" class="login_a">登录</a>][<a href="" class="reg_a">注册</a>]
+                ｜&nbsp;<a href="#" class="cart_a">购物车(<i>0</i>)件</a>&nbsp;｜
+                <a href="">我的订单</a>
+            </div>
+        </div>
+    </div><!--/sub_top-->
+    <div class="logo_box clear">
+        <div class="wapper">
+            <div class="left"><a href=""><img src="<?php echo ADMIN_IMGS_URL ?>logo.jpg"></a></div>
+            <div class="left search">
+                <div class="search_box">
+                    <div class="search_top">
+                        <label><input type="text" focucmsg="请输入商品或品牌进行搜索" class="input_search" /></label>
+                        <label><input type="submit" value="搜索" class="sub_input" /></label>
+                    </div>
+                    <div class="search_bottom">
+                        <a href="">步步高</a>
+                        <a href="">三星</a>
+                        <a href="">OPPO</a>
+                        <a href="">新品</a>
+                        <a href="">热销</a>
+                        <a href="">经典</a>
+                    </div>
+                </div>
+            </div><!--/search-->
+            <div class="left img_box"><img src="<?php echo ADMIN_IMGS_URL ?>icon_02.jpg"></div>
+            <div class="right cart_btn j-hidebar">
+                <a href="" class="cart_a">
+                    <span>我的购物车</span>
+                    <em>0</em>
+                </a>
+                <div class="box hidebar">
+                    <div class="empty">购物车中还没有商品，赶紧选购吧！</div>
+                    <div class="noempty" style="display:block;">
+                        <h2>最新加入的商品</h2>
+                        <ul class="j-li-hover">
+                            <li>
+                                <div class="p-img">
+                                    <a href="#"><img src="<?php echo ADMIN_IMGS_URL ?>p_01.jpg" /></a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="#">产品名称标题产品名称标题产品名称标题产品名称标题产品名称标题</a>
+                                </div>
+                                <div class="p-detail">
+                                    <p class="p-price"><strong>￥444444.00</strong><br/>"×1"</p>
+                                    <p><a class="delete" href="javascropt:void(0);">删除</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-img">
+                                    <a href="#"><img src="<?php echo ADMIN_IMGS_URL ?>p_01.jpg" /></a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="#">产品名称标题产品名称标题产品名称标题产品名称标题产品名称标题</a>
+                                </div>
+                                <div class="p-detail">
+                                    <p class="p-price"><strong>￥444444.00</strong><br/>"×1"</p>
+                                    <p><a class="delete" href="javascropt:void(0);">删除</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="p-settle">共<b> 8 </b>件商品 共计：<strong>￥371.00</strong></div>
+                        <div class="p-btn"><a href="#" class="c-btn">去购物车结算</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/logo_box-->
+</div><!--/header-->
+<div class="login-box"><div class="area loginBg">
+    <div class="m-login">
+        <div class="f-loginBorder">
+            <div class="u-title"><strong>会员登录</strong><span><a href="#">立即注册</a>，享受更多折扣，返现专属优惠！</span></div>
+            <form id="loginform" name="loginform">
+                <input type="hidden" id="login_url" name="login_url" value="tools/submit_ajax.ashx?action=user_login" />
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="60">&nbsp;</td>
+                        <td colspan="2" class="u-radio"><input type="radio" name="usertype" checked="checked" id="users" value="0" /><span>个人用户</span><input type="radio" name="usertype" id="store" value="1" /><span>入驻商家</span></td>
+                    </tr>
+                    <tr>
+                        <td class="u-name">登录名</td>
+                        <td class="u-input"><input type="text" value="用户名/卡号/手机/邮箱" onblur="if(this.value==''){this.value='用户名/卡号/手机/邮箱'}" onfocus="if(this.value=='用户名/卡号/手机/邮箱'){this.value=''}" id="txtUserName" name="txtUserName" maxlength="50"/></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="u-name">密　码</td>
+                        <td class="u-input"><input type="password" type="password" maxlength="100" id="txtPassword" name="txtPassword"/></td>
+                        <td><a href="repassword.aspx" title="忘记密码？">忘记密码？</a></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="2" class="u-radio"><input type="checkbox" checked="checked" id="chkRemember" name="chkRemember"/><label for="chkRemember">一周内自动登录</label></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="2" class="u-btn"><input type="submit" value="登录" class="btn" id="btnSubmit" name="btnSubmit"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding:0 0 10px;" colspan="2">
+                            <div id="msgtips"><dd></dd></div>
+                            <input id="turl" name="turl" type="hidden" value="index.aspx" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="f-methods">
+            <div class="u-title">你可以使用以下方式登录</div>
+            <div class="u-con">
+                <ul class="clear">
+                    <li><a href="#" title="支付宝"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img1.jpg" /><span>支付宝</span><span class="u-mark"></span></a></li>
+                    <li><a href="#" title="QQ"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img2.jpg" /><span>QQ </span></a></li>
+                    <li><a href="#" title="新浪微博"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img3.jpg" /><span>新浪微博</span></a></li>
+                    <li><a href="#" title="360"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img4.jpg" /><span>360</span></a></li>
+                    <li><a href="#" title="网易"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img5.jpg" /><span>网易</span></a></li>
+                    <li><a href="#" title="人人网"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img6.jpg" /><span>人人网</span></a></li>
+                    <li><a href="#" title="MSN"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img7.jpg" /><span>MSN</span></a></li>
+                    <li><a href="#" title="百度"><img src="<?php echo ADMIN_IMGS_URL ?>member/login-img8.jpg" /><span>百度</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--m-login-->
+</div></div><!--login-box-->
+<div class="footer">
+    <div class="footer_wapper">
+        <div class="footer_top">
+            <div class="div1">
+                天退换服务<br/>
+                免您后顾之忧
+            </div>
+            <div class="div2">
+                全场正品<br/>
+                行货保障
+            </div>
+            <div class="div3">
+                服务保证<br/>
+                全国联保
+            </div>
+            <div class="div4">
+                货到付款<br/>
+                安心编辑
+            </div>
+            <div class="div5">
+                购物指南<br/>
+                帮助中心
+            </div>
+        </div><!--/footer_top-->
+        <div class="footer_bottom">
+            <dl>
+                <dt><a href="">常用服务</a></dt>
+                <dd><a href="">问题咨询</a></dd>
+                <dd><a href="">修改订单</a></dd>
+                <dd><a href="">催办订单</a></dd>
+                <dd><a href="">保修退换货</a></dd>
+                <dd><a href="">上门安装</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">购物</a></dt>
+                <dd><a href="">怎样购物</a></dd>
+                <dd><a href="">积分优惠券介绍</a></dd>
+                <dd><a href="">订单状态说明</a></dd>
+                <dd><a href="">易迅礼品网介绍</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">付款</a></dt>
+                <dd><a href="">货到付款</a></dd>
+                <dd><a href="">在线支付</a></dd>
+                <dd><a href="">其他支付方式</a></dd>
+                <dd><a href="">发票说明</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">配送</a></dt>
+                <dd><a href="">易迅快递</a></dd>
+                <dd><a href="">上门自提</a></dd>
+                <dd><a href="">价格保护</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">售后</a></dt>
+                <dd><a href="">售后服务政策</a></dd>
+                <dd><a href="">退换货服务流程</a></dd>
+                <dd><a href="">优质售后服务</a></dd>
+                <dd><a href="">特色服务指南</a></dd>
+                <dd><a href="">服务时效承诺</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">商家合作</a></dt>
+                <dd><a href="">供销商直通车</a></dd>
+                <dd><a href="">企业采购</a></dd>
+            </dl>
+        </div>
+    </div>
+</div><!--/footer-->
+<div class="copy">
+    <div class="wapper">
+        <div class="div1">
+            <a href="">首页</a>|
+            <a href="">公司介绍</a>|
+            <a href="">网站介绍</a>|
+            <a href="">新闻中心</a>|
+            <a href="">联系我们</a>|
+            <a href="">人才招聘</a>|
+            <a href="">友情链接</a>
+        </div>
+        <div class="div2">
+            Copyright 2003-2012 qinqinbaby.com All Rights Reserved 渝ICP证110889号 渝ICP备11017831号
+        </div>
+    </div>
+</div><!--/copy-->
+</body>
+</html>

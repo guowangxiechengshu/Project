@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/*登录*/
+/*************  login-box  *************/
+.login-box .area{position:relative;padding:79px 0 74px;}
+.loginBg{background:url(/shop/Admin/Public/imgs/member/login-bg.jpg) 10px center no-repeat;z-index:1;}
+.m-login{position:relative;float:right;margin:0 35px 0 0;width:390px;height:388px;border:1px solid #ccc;z-index:99;}
+.f-loginBorder{margin:0 auto;width:334px;height:283px;overflow:hidden;}
+.f-loginBorder .u-title{margin:0 0 8px;padding:5px 0 0;height:40px;line-height:40px;border-bottom:1px solid #d8e8f8;}
+.f-loginBorder .u-title strong{font-weight:normal;font-size:14px;}
+.f-loginBorder .u-title span{padding:0 0 0 35px;}
+.f-loginBorder .u-title span a{color:#0053aa;}
+.f-loginBorder .u-title span a:hover{color:#0053aa;text-decoration:underline;}
+.f-loginBorder table tr td{padding:8px 0;text-align:left;}
+.f-loginBorder table tr td.u-radio input,.f-loginBorder table tr td.u-radio span{float:left;}
+.f-loginBorder table tr td.u-radio span{padding:0 20px 0 0;}
+.f-loginBorder table tr td.u-name{font-size:14px;}
+.f-loginBorder table tr td.u-input{width:206px;color:#f00;}
+.f-loginBorder table tr td.u-input input{display:block;padding:8px 5px;width:183px;height:14px;font-size:12px;color:#808080;border:0;background:url(/shop/Admin/Public/imgs/member/login-ico.jpg) no-repeat;}
+.f-loginBorder table tr td.u-password input{background-position:0 -30px;}
+.f-loginBorder table tr td a{color:#0053aa;}
+.f-loginBorder table tr td a:hover{color:#0053aa;text-decoration:underline;}
+.f-loginBorder table tr td.u-btn input{display:block;width:102px;height:31px;text-align:center;text-indent:-999em;background:url(/shop/Admin/Public/imgs/member/login-ico.jpg) 0 -60px no-repeat;border:0;cursor:pointer;}
+.f-loginBorder #msgtips{color:#f00;}
+.f-methods{padding:15px 0 0 40px;width:350px;height:90px;overflow:hidden;background:#fffbf5;}
+.f-methods .u-title{margin:0 0 15px;}
+.f-methods ul li{margin:0 0 8px;position:relative;float:left;display:inline;padding:0 20px 0 0;}
+.f-methods ul li img{margin:0 5px 0 0;vertical-align:middle;}
+.f-methods ul li span.u-mark{position:absolute;top:-14px;right:0;width:30px;height:14px;background:url(/shop/Admin/Public/imgs/member/login-sale.jpg) no-repeat;}
+
+/*注册*/
+/*************  register-box  *************/
+.register-box{padding:50px 0;}
+.m-register{margin:0 auto;width:700px;}
+.m-regTitle{margin:0 0 40px;height:36px;line-height:36px;overflow:hidden;}
+.m-regTitle h2{float:left;display:inline;font-size:24px;}
+/* m-step */
+.m-step{float:left;padding:0 0 0 20px;}
+.m-step li{float:left;width:180px;font-size:14px;font-weight:bold;color:#fff;text-align:center;background:#ccc url(/shop/Admin/Public/imgs/member/step-bg.jpg) right -36px no-repeat;}
+.m-step li.u-last{background-position:right -108px;}
+.m-step li.u-prev{background-position:right -72px;}
+.m-step li span,
+.m-step li span em{display:block;width:160px;height:36px;line-height:36px;}
+.m-step li span em{padding:0 20px 0 0;width:160px;}
+.m-step li span.current{background:url(../images/member/step-bg.jpg) 0px -144px repeat-x;}
+.m-step li span.current em{background:url(../images/member/step-bg.jpg) right 0 no-repeat;}
+.m-step li.u-fist span.current em{border-left:1px solid #f2822e;}
+.m-step li.u-last span.current em{background:none;border-right:1px solid #f2822e;}
+/* m-regTable */
+.m-regTable table a{color:#06c;}
+.m-regTable table a:hover{color:#06c;text-decoration:underline;}
+.m-regTable table tr td{padding:10px 0;}
+.m-regTable table tr td.u-name{padding:0 10px 0 0;text-align:right;font-size:14px;font-family:'Microsoft YaHei';}
+.m-regTable table tr td.u-input input{margin:0 10px 0 0;padding:8px 6px;width:210px;height:14px;font-size:12px;color:#333;border:1px solid #ccc;background:#fff; vertical-align:middle;}
+.m-regTable table tr td.u-input span{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;}
+.m-regTable table tr td.u-input span.u-ts{padding:0 10px 0 24px;background:#fff5d1 url(/shop/Admin/Public/imgs/member/regts-ico.gif) 5px center no-repeat;border:1px solid #ffb533;line-height:22px;}
+.m-regTable table tr td.u-input span.u-bz{color:#999;}
+.m-regTable table tr td.u-input span.u-success{padding:4px 0;width:16px;height:16px;background:url(/shop/Admin/Public/imgs/member/regts-ico1.gif) center center no-repeat;}
+.m-regTable table tr td.u-input span.u-weak{margin:2px 10px 2px 0;}
+.m-regTable table tr td.u-input span.u-weak em{display:block;float:left;width:45px;height:26px;line-height:26px;text-align:center;background:#ecc6aa;color:#fff;border-right:2px solid #fff;}
+.m-regTable table tr td.u-input span.u-weak em.current{background:#ed9555;}
+.m-regTable table tr td.u-input span.u-code{float:left;line-height:24px;}
+.m-regTable table tr td.u-input span.u-code img{float:left;margin-right:10px;}
+.m-regTable table tr td.u-yzm img{ vertical-align:middle;}
+.m-regTable table tr td.u-yzm input{width:100px;}
+.m-regTable table tr td.u-check input{margin-right:10px; vertical-align:middle;}
+.m-regTable table tr td.u-check a{color:#900;text-decoration:underline;}
+.m-regTable table tr td.u-check a:hover{color:#900;}
+.m-regTable table tr td.u-btn input{display:block;width:102px;height:31px;text-align:center;text-indent:-999em;background:url(/shop/Admin/Public/imgs/member/login-ico.jpg) 0 -91px no-repeat;border:0;cursor:pointer;}
+/* m-regChecking */
+.m-regChecking{padding:20px 0;}
+.m-regChecking .left-column{width:390px;}
+.m-regChecking .left-column .f-ts{height:115px;font-size:14px;line-height:24px;}
+.m-regChecking .left-column .f-btn a{display:block;width:102px;height:31px;text-align:center;text-indent:-999em;background:url(/shop/Admin/Public/imgs/member/login-ico.jpg) 0 -122px no-repeat;}
+.m-regChecking .left-column .f-link{padding:10px 0 0;}
+.m-regChecking .right-column{margin:10px 0 0;padding:24px;width:208px;height:70px;background:#f9f9f9;border:1px solid #ccc;}
+.m-regChecking .right-column .f-title{margin:0 0 15px;font-size:14px;color:#666;line-height:24px;}
+.m-regChecking .right-column .f-btn a{display:block;width:114px;height:27px;text-align:center;text-indent:-999em;background:url(/shop/Admin/Public/imgs/member/login-ico.jpg) 0 -153px no-repeat;}
+/* m-regSuccess */
+.m-regSuccess{margin:0 auto 50px;padding:10px 0 0 125px;width:290px;background:url(../images/member/login-ico.jpg) -115px -60px no-repeat;}
+.m-regSuccess h1{font-size:24px;}
+.m-regSuccess .f-ts{line-height:30px;color:#666;}
+.m-regSuccess .f-link{padding:10px 0;}
+.m-regSuccess .f-link a{padding:0 0 0 43px;display:block;height:30px;line-height:30px;color:#900;background:url(/shop/Admin/Public/imgs/member/login-ico.jpg) -200px 0 no-repeat;}
+.m-regSuccess .f-link a.right{background-position:-200px -30px;}
+/* m-regError */
+.m-regError{margin:0 auto 50px;padding:10px 0 0 125px;width:290px;background:url(/shop/Admin/Public/imgs/member/error.png) 20px 10px no-repeat;}
+.m-regError h1{font-size:24px;}
+.m-regError .cn{padding:10px 0 5px 0;font-size:16px;font-family:'microsoft yahei';color:#c00;}
+.m-regError .f-ts{line-height:30px;color:#666;}
+.m-regError .f-link{padding:10px 0;}
+.m-regError .f-link a{display:block;height:30px;line-height:30px;color:#900;}
+.m-regError .f-link a.right{background-position:-200px -30px;}
+
+
+/************************忘记密码*******************************/
+.login-main{}
+.login-main h2{padding:10px 0 0 10px;height:50px; line-height:50px; color:#333333; font-size:24px;font-family:'microsoft yahei';font-weight:400;}
+.login-con{padding:5px;margin-bottom:30px; background:#f2f2f2;}
+.loginBox{padding:30px 0;}
+/************ m-password *************/
+.m-password{padding:30px 0;height:305px;overflow:hidden;background:#fff;}
+.m-password .green{color:#090;font-weight:bold;}
+.m-password .red{color:#900;}
+.m-passTitle{padding-top:25px;width:770px;margin-left:auto;margin-right:auto;}
+.m-passTitle li{height:30px;line-height:30px;width:23%;margin:0 7px;float:left;_display:inline;text-align:center;font-weight:bold;color:#ccc;border-bottom:3px solid #ccc;font-size:18px;font-family:'microsoft yahei';font-weight:normal;}
+.m-passTitle li.current{color:#F28E00;border-bottom:3px solid #F28E00;}
+.m-passResult,.m-passWait{padding-top:89px;}
+.m-passWait .u-con{padding-left:100px;width:320px;margin:0 auto;min-height:90px;background:url(/shop/Admin/Public/imgs/member/passloading.png) left center no-repeat;text-align:left;line-height:30px;font-size:14px;color:#666;}
+.m-passResult .u-con{padding-left:80px;width:320px;margin:0 auto;min-height:90px;background:url(/shop/Admin/Public/imgs/member/ok.png) left 0 no-repeat;text-align:left;line-height:30px;font-size:14px;color:#666;}
+.m-passResult a,.m-passWait a{color:#005ea7;}
+.fsyj i{font-style:normal;}
+.fsloading{display:none;color:#999;}
+
+.m-passNew{width:700px;padding-top:40px;margin-left:auto;margin-right:auto;}
+.m-passNew .td-1{width:100px;text-align:right;}
+.m-passNew .td-2{width:560px;}
+.m-passNew .td-3{color:#999;font-size:12px;}
+.m-passNew .td-input input{width:250px;}
+.dingdanval-bottom .loginCon{margin:0 0 10px 0;}
+
+.m-utitle{padding-left:5px;border-bottom:1px dotted #d9d9d9;padding-bottom:5px;margin-bottom:10px;}
+.m-utitle h2{line-height:30px;float:left;margin-right:15px;font-family:'宋体';}
+.m-utitle p{float:left;line-height:30px;}
+.m-utitle i{font-style:normal;color:#e50000;}
+.m-ucontent{padding:5px 15px 30px 15px;}
+
+.user-edit{position:relative;}
+.user-edit .s-table{width:70%;}
+.user-edit .s-table td{padding:10px 0;}
+.user-edit .s-table .td-input input{width:90%;height:28px;line-height:28px;border:1px solid #ddd;}
+.user-edit .s-table img{max-height:32px;margin-right:5px;vertical-align:middle;}
+.user-edit .s-table .td-btn input{margin-right:15px;}
+.user-edit .u-face{position:absolute;top:0px;right:0; width:170px; height:272px; overflow:hidden;}
+.user-edit .u-face .img{width:170px;height:240px; overflow:hidden;}
+.user-edit .u-face img{width:168px;height:238px;border:1px solid #e9e9e9;}
+.user-edit .u-face p{height:32px;line-height:32px;background:#e9e9e9;text-align:center;}
+
+.table-addr td{padding:10px 0;text-align:left;color:#666666;}
+.table-addr .td-input input{padding:4px 0;border:1px solid #ddd;vertical-align:middle;}
+.table-addr th{font-weight:normal;}
+.table-addr .td-input input{width:80%;}
+.table-addr i{font-style:normal;color:#e50000}
+.table-addr .add{margin-bottom:5px;}
+.table-addr .add input{width:75px;}
+.table-addr .add2 input{width:80%;}
+.table-addr .ttarea textarea{padding:4px 0;width:80%;height:48px;border:1px solid #ddd;vertical-align:middle;}
+.addr-edit .right .td-top{padding-top:17px;vertical-align:top;}
+.addr-edit .right td{padding-bottom:5px;}
+.addr-show h3{margin-bottom:15px;}
+.addr-show .table-addrshow{border-left:1px solid #c02828;border-top:1px solid #c02828;border-right:1px solid #c02828;}
+.addr-show .table-addrshow th,
+.addr-show .table-addrshow td{padding:8px 0;color:#666;font-weight:normal;text-align:center;border-bottom:1px solid #c02828;}
+.addr-show .table-addrshow th{background:#c02828;color:#FFF;}
+/* loginCon */
+.table-login td,.table-login th{padding:8px 0;height:32px;font-size:14px; line-height:30px;}
+.table-login .vljdf{padding:0 0; line-height:16px; overflow:hidden; height:16px;}
+.table-login .td-1{height:30px;padding-right:4px;line-height:30px;text-align:right;}
+.table-login .td-2 span{height:32px;font-size:12px;color:#999;}
+.table-login .td-2 .valsh{color:#EC330A;}
+.table-login .td-input input,.table-login .td-yzm input{float:left;height:28px;line-height:28px;border:1px solid #ddd;}
+.table-login img{max-height:32px;margin-right:5px;vertical-align:middle;}
+.table-login a{padding:0 6px; color:#e4393c;}
+.table-login .td-btn a{height:35px; line-height:35px; float:left;}
+.table-login .x{color:#c00;}
+.table-login .y{color:#00c029;}
+.table-login .td-yzm input{width:96px;}
+.table-login .u-btn{margin-right:10px;background:#ff9900;color:#FFF;width:105px; height:35px; line-height:35px; color:#f3f3f3;font-size:14px;cursor:pointer;*padding:3px 0 0 0; float:left; border:none; border:0;}
+.shopempty .btn-01,
+.table-user .td-btn .btn-01{margin-right:10px;background:#ff9900;color:#FFF;width:120px; height:35px; line-height:35px; color:#f3f3f3;font-size:14px;cursor:pointer;*padding:3px 0 0 0; text-align:center; display:inline-block; border:none; border:0;}
+.table-user .td-btn .btn-01,.table-user .td-btn .btn-02{float:left;}
+.table-login .regbtn{display:inline-block;*display:inline;*zoom:1;color:#f3f3f3;background:#bcbcbc;width:105px; height:35px; line-height:35px; font-size:14px;cursor:pointer;text-align:center;text-decoration:none;}
+.reg-success .btn-02,.table-user .td-btn .btn-02{display:inline-block;*display:inline;*zoom:1;color:#f3f3f3;background:#bc1111;width:120px; height:35px; line-height:35px; font-size:14px;cursor:pointer;text-align:center;text-decoration:none;}
+.table-login .u-btn:hover,.table-login .regbtn:hover{filter:alpha(opacity=90);opacity: 0.9;-moz-opacity:0.9;-khtml-opacity: 0.9;}
+.table-login label{display:inline-block;*display:inline;*zoom:1;height:28px;line-height:28px;margin:3px;}
+
+.loginCon .td-1{width:80px;}
+.loginCon .td-2{width:520px;}
+.loginCon .td-input input{width:300px;margin-right:10px;}
+
