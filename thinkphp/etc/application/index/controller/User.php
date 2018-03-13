@@ -71,4 +71,51 @@ class User extends  Base
     public  function  reg(){
 
     }
+
+    //管理员列表
+    public  function  addList(){
+        $this -> view ->assign('title','管理员列表');
+        $this -> view ->assign('$keywords','管理员列表');
+        $this -> view ->assign('$desc','管理员列表');
+
+        //统计变量
+        $this ->view -> count =UserModel::count();
+        //role
+//        $role = User::get('role');
+//        if ($role=='0'){
+//            $this -> view ->assign('data','superAdmin');
+//        }else {
+//            $this ->view ->assign('data','Admin');
+//        }
+        $username = Session::get('user_info.username');
+        if($username == 'admin'){
+            $List = UserModel::all();
+        }else{
+            $List = UserModel::all(['username'=>$username]);
+        }
+
+        $this ->view ->assign('List',$List);
+        return  $this -> view ->fetch();
+    }
+
+    //管理员状态修改
+    public function  setStatus(Request $request){
+        $user_id = $request -> param('id');
+        $result =UserModel::get($user_id);
+        if ($result ->getData('status') == 1){
+            UserModel::update(['status'=>0],['id'=>$user_id]);
+        }else {
+            UserModel::update(['status'=>1],['id'=>$user_id]);
+        }
+
+        return $user_id;
+    }
+
+    //管理员删除
+    public  function  deletUser(Request $request){
+        $user_id = $request -> param('id');
+        UserModel::destroy(['id' => $user_id]);
+    }
+
 }
+
